@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">-->
+    <meta name="description" content="The Raiden Network">
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="icon" href="../favicon.ico">
+
+    <!-- Custom Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91465549-7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-91465549-7');
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body id="page-top">
+    <div class="se-pre-con"></div>
+
+    <nav id="frontNav" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="140">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a href="https://raiden.network/">
+                    <img src="../img/Raiden_Logo.png" id="logo" height=40 alt="Raiden">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 20px">
+                    <!--<li style="margin-top: 4px">
+                    <a class="page-scroll" href="/">Home</a>
+                </li>-->
+                    <li style="margin-top: 2px">
+                        <a class="link" style="text-transform: none" href="https://raiden.network/101.html">Raiden 101</a>
+                    </li>
+                    <li style="margin-top: 2px">
+                        <a class="link" style="text-transform: none" href="https://raiden.network/micro.html">µRaiden</a>
+                    </li>
+                    <li style="margin-top: 2px">
+                        <!--  <a class="link" style="text-transform: none" href="/developers.html">Developers</a> -->
+                        <a class="dropdown-toggle" style="text-transform: none" data-toggle="dropdown" href="/developers.html">Developers
+                      <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.github.com/raiden-network/raiden/?fref=ts">Raiden Network Github</a></li>
+                            <li><a href="http://raiden-network.readthedocs.io/en/stable/">Raiden Network Docs</a></li>
+
+                            <li><a href="https://github.com/raiden-network/microraiden">µRaiden Github</a></li>
+                            <li><a href="http://microraiden.readthedocs.io">µRaiden Docs</a></li>
+                            <!--  <li><a href="https://demo.micro.raiden.network">µRaiden Demos</a></li> -->
+                        </ul>
+                    </li>
+                    <li style="margin-top: 2px">
+                        <a class="link" style="text-transform: none" href="https://raiden.network/faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="tokensection" style="padding-bottom: 60px;">
+        <div class="container" style="text-align:center">
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1 id="auction-title" style="padding-top: 120px; font-weight: 200; font-size: 65px" !important>
+                        The Raiden token launch starts on October 18th around 3pm UTC.
+                    </h1>
+                    <h2 id="auction-subtitle" style="display: none; margin-top: 0px; font-weight: 300 !important; padding-bottom: 0px;" !important>The auction format combines certainty of participation with certainty of valuation.
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section style="background-color: black; color: white; padding-top: 0px; padding-bottom: 0px" id="kyc-firststage">
+        <div class="container">
+            <div class="row">
+                <div style="margin-bottom: 20px; text-align: center; margin-top: 20px;" class="column col-lg-6 col-md-8 col-sm-8 col-xs-8 col-lg-offset-3 col-md-offset-2 col-sm-offset-2 col-xs-offset-1 mx-auto">
+                    <a style="padding-top: 12px; margin-top: 0px; width: 284px; margin-bottom: 40px" target="_blank" href="https://kyc.token.raiden.network" id='kyc-btn-front' class="btn btn-default">Get Whitelisted*</a>
+                    <p>
+                        * Only participants who intend to bid more than 2.5 ETH in total, need to go through the KYC process to get whitelisted. See the <a target="_blank" style="padding-left: 0px;" href="/faq.html">KYC FAQ</a> for details.
+                    </p>
+                    <!--
+      <p style="margin-top: 0px; padding-bottom: 0px;">No individual caps, bonus or discount periods.</p>
+      <p style="margin-top: 20px; padding-bottom: 0px; ">Citizens from China or the USA can participate subject to the Terms of the Token Generation Event.</p>-->
+                </div>
+            </div>
+        </div>
+        <div id="auction-explainer-container" class="column col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 mx-auto" style="margin-top: 30px;">
+            <h2 style="margin-top: 0px; font-weight: 300 !important; padding-bottom: 0px; margin-bottom: 0px;">Read <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-network-token-rdn-launch-is-set-to-october-18th-5e9a2ffd7960">the token launch announcement</a> and watch below video to learn about the same price dutch auction format.</h2>
+        </div>
+    </section>
+    <section class="tokensection" id="timer-container">
+        <div class="container" style="text-align:center; margin-bottom: 20px">
+            <div class="header-content">
+                <div class="header-content-inner" id="participate-button-container" style="display: none">
+                    <div class="row">
+                        <div class="column col-lg-6 col-md-10 col-sm-10 col-lg-offset-3 col-md-offset-1 col-sm-offset-1 mx-auto">
+                            <a id='contribute-btn' class='btn btn-default' data-toggle='modal' data-target='#terms-modal'>PARTICIPATE</button>
+            <a target="_blank" href="https://kyc.token.raiden.network" id='kyc-btn' class="btn btn-default">Get Whitelisted*</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-content-inner" style="padding-top: 60px; display: none" id="kyc-information">
+                    <p style="padding-bottom: 40px;">
+                        * Only participants who intend to bid more than 2.5 ETH in total, need to go through the KYC process to get whitelisted. See the <a target="_blank" style="padding-left: 0px;" href="/faq.html">KYC FAQ</a> for details.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tokensection" id="auctionrunning">
+        <!--to make it secure, the ETH address as well as the data field should get data through js-->
+        <div class="container" style="margin-bottom: 90px">
+            <div class="column col-lg-6 col-md-7 col-sm-7 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 mx-auto">
+
+                <p>
+                    Thanks for accepting the <a data-toggle='modal' data-target='#terms-modal'>terms and conditions</a>.
+                </p>
+                <p>Participate in the auction by sending ETH to the below address:</p>
+                <div>
+                    <div class="form-horizontal">
+                        <div class="form-group" id="address-group" style="margin-left: 0px;">
+                            <div class="input-group">
+                                <input type="text" id="auctionaddress" style="border-radius: 2px" class="form-control address" name="fname" readonly>
+                                <span class="input-group-btn">
+            <button class="btn btn-default" id="copyButton">Copy</button>
+          </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <a class="col-sm-8 col-lg-8 col-md-8 control-label address-link" style="padding-left: 0px;" href="https://etherscan.io/address/">Verify the above address on Etherscan.</a>
+                    </p><br>
+                    <p style="padding-top: 20px">Warning: Only send ETH from ERC-20 compliant wallets which allow you to control your private key. Make sure to backup your private key. Do NOT send from an exchange, your ETH will be lost.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Auction Graph -->
+    <section id="graph-section" style="display: none;">
+        <div class="container" style="text-align:center">
+            <div class="row">
+                <div class="col-lg-9" style="min-height:500px;">
+                    <canvas id="auction-graph"></canvas>
+                </div>
+                <div class="col-lg-3">
+                    <!-- auction not started -->
+                    <div class="container not-started" style="text-align: left; display: none;">
+                        <div class="row" data-toggle="tooltip" title="This is the amount of all existing RDN tokens.">
+                            <p style="margin-bottom:0px; margin-top:20px">Total supply:</p>
+                            <h2><span class="total-supply">100,000,000</span><small>RDN</small></h2>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="This is the amount of all publicly offered tokens during this auction.">
+                            <p style="margin-bottom:0px; margin-top:20px">Offered supply:</p>
+                            <h2><span class="tokens-offered">50,000,000</span><small>RDN</small></h2>
+                            + </div>
+                        <div class="row" data-toggle="tooltip" title="This is the starting price of the auction. It is deliberately chosen to be very high, in to allow all participants a reasonable amount of time to prepare and acquire tokens.">
+                            <p style="margin-bottom:0px; margin-top:20px">Initial price:</p>
+                            <h2><span class="starting-price">0.00141</span><small>ETH/RDN</small></h2>
+                        </div>
+                    </div>
+                    <!-- auction running -->
+                    <div class="started" style="display: none;">
+                        <div class="row" data-toggle="tooltip" title="The current bidding price will decrease over time according to the upper curve. Note that the final price at which tokens are acquired is determined at the end of the auction and is the same for all acquirers.">
+                            <p style="margin-bottom:0px; margin-top:20px">Current price:</p>
+                            <h2><span class="current-price">0.00141</span><small>ETH/RDN</small></h2>
+                            <p style="margin-bottom:5px;">Subscribe to our <a id="alerts-btn" style="cursor:pointer;" data-toggle="modal" data-target="#alerts-modal">price alert</a></p>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="The amount of ETH sent to the auction so far. Once this equals the implied value of offered supply, the auction ends.">
+                            <p style="margin-bottom:0px; margin-top:20px">ETH sent to auction:</p>
+                            <h2><span class="amount-raised">24,567</span><small>ETH</small></h2>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="The ETH missing to end the auction at the current price. This will decrease over time and/or if more ETH is sent to the auction.">
+                            <p style="margin-bottom:0px; margin-top:20px">ETH required to end auction:</p>
+                            <h2><span class="current-missing">164,567</span><small>ETH</small></h2>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="Equals current price multiplied by the 50M tokens offered in this auction. It will decrease over time.">
+                            <p style="margin-bottom:0px; margin-top:20px">Implied value of offered supply:</p>
+                            <h2><span class="current-target">184,567</span><small>ETH</small></h2>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="Equals current price multiplied by the 100M existing tokens. It will decrease over time.">
+                            <p style="margin-bottom:0px; margin-top:20px">Implied value of total supply:</p>
+                            <h2><span class="current-total">369,134</span><small>ETH</small></h2>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="The auction ends once the ETH sent to the auction equals the implied value of offered supply. I.e. the auction end will be sooner, if there is more ETH sent to the contract in the future.">
+                            <p style="margin-bottom:0px; margin-top:20px">Latest auction end (<span class="current-end-tz">CET</span>):</p>
+                            <h2 class="current-end">Oct 26 14:23</h2>
+                        </div>
+                    </div>
+                    <!-- auction ended -->
+                    <div class="ended" style="text-align: left; display: none;" id="mobilestats">
+                        <div class="row" data-toggle="tooltip" title=" This is the final price as determined by the auction. This is the price which will be used to calculate the amount of RDN allocated to each participant and it is the same for all participants.">
+                            <p style="margin-bottom:0px; margin-top:20px">Final price:</p>
+                            <h2><span class="current-price">0.00141</span><small>ETH/RDN</small></h2>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="The final amount of ETH sent to the auction.">
+                            <p style="margin-bottom:0px; margin-top:20px">ETH sent to auction:</p>
+                            <h2><span class="amount-raised">24,567</span><small>ETH</small></h2>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="This is the amount of all publicly offered tokens during this auction.">
+                            <p style="margin-bottom:0px; margin-top:20px">Offered supply:</p>
+                            <h2><span class="total-issued">50,000,000</span><small>RDN</small></h2>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="Auction start">
+                            <p style="margin-bottom:0px; margin-top:20px">Auction start (<span class="auction-start-tz">CET</span>):</p>
+                            <h2 class="auction-start">Oct 16 16:00</h2>
+                        </div>
+                        <div class="row" data-toggle="tooltip" title="Date when the ETH sent to the auction equals the implied value of offered supply.">
+                            <p style="margin-bottom:0px; margin-top:20px">Auction end (<span class="current-end-tz">CET</span>):</p>
+                            <h2 class="current-end">Oct 26 14:23</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="graph-disclaimer small">
+    Due to technical limitations, above values are not precise.
+  </span>
+        <div id="alerts-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Price Alert</h4>
+                    </div>
+                    <div class="modal-body" style="padding-top: 15px !important;">
+                        <div id="price-alert-info" class="alert alert-info text-center" role="alert">
+                            <h4>Subscribe to our price alert</h4>
+                            <p>We will send you an email as soon as the price drops to a specified level.
+                            </p>
+                        </div>
+                        <div id="price-alert-success" style="display: none" class="alert alert-success text-center" role="alert">
+                            <h4>Thank you for subscribing to our price alert!</h4>
+                            <p>Please check your emails and click on the verification link to confirm your subscription.</p>
+                        </div>
+                        <div id="price-alert-error" style="display: none" class="alert alert-danger text-center" role="alert">
+                            <h4>Oops! Something went wrong.</h4>
+                            <p>We are sorry for the inconvenience.</p>
+                        </div>
+                        <form class="form-horizontal" id="alerts-form" action="https://pricealert.token.raiden.network/set_alert" method="post">
+                            <div class="form-group col-md-12" style="padding-right: 0; margin-right: 0;">
+                                <label for="email">Email:</label>
+                                <div class="input-group" style="width: 100%">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter you email address" autofocus required/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 left-col">
+                                <label for="price">Price (ETH/RDN):</label>
+                                <div class="input-group" style="width: 100%">
+                                    <input style="font-size: 18px;" type="number" min="0.0000001" max="0.03" step="0.0000001" class="form-control current-price" name="price" id="price" placeholder="Price" required/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6" style="padding-right: 0; margin-right: 0;">
+                                <label for="offeredvalue">Implied value of offered supply (ETH):</label>
+                                <div class="input-group" style="width: 100%">
+                                    <input style="font-size: 18px;" type="number" min="1" max="10000000" step="1" class="form-control" id="offeredvalue" placeholder="Value" />
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-12" style="padding-right: 0; margin-right: 0;">
+                                <label class="checkbox-inline">
+                <input type="checkbox" name="noLiability" id="noLiability" required>
+                The price alert emails are being provided for free. No guarantee or warranty is made regarding the accuracy or timeliness of the alert emails or the integrity or functionality of the underlying hardware and software. By clicking this checkbox you confirm that you will not hold Brainbot Labs Establishment or its Affiliates liable for any kind damages or loss resulting from the use of the alert email functionality.
+              </label>
+                            </div>
+                            <div class="form-group text-center">
+                                <div id="recaptcha" style="margin: 0 auto; width: 304px;">
+                                    <div class="g-recaptcha" data-sitekey="6Lcm0TQUAAAAAIIzH56uLnuVkchSCvNLDLe49rG_" data-callback="checkAlertsForm"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="margin-top: 40px;">
+                        <button style="border-radius: 2px" type="button" id="alerts-cancel" class="btn btn-danger" data-dismiss="modal" href="/">Close</button>
+                        <button style="border-radius: 2px" type="button" id="alerts-confirm" class="btn btn-success" disabled>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AUCTION STARTED -->
+    <section class="tokensection started" id="mobile-small" style="display: none; padding-bottom: 1px; padding-top: 1px;">
+        <!-- Terms & Conditions Modal -->
+        <div id="terms-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Terms & Conditions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="terms1">
+                            terms.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="print" type="button" class="btn btn-default pull-left" style="border-color: black;">
+            <span class="glyphicon glyphicon-print" aria-hidden="true"></span>&nbsp;&nbsp;Print
+          </button>
+                        <button type="button" id="disagreetac" class="btn btn-danger" data-dismiss="modal" href="/">I don't agree</button>
+                        <button type="button" id="agreetac" class="btn btn-success" data-dismiss="modal">I have read and understood the terms and agreement</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Auction explainer video -->
+    <section style="background-color: black; color: white; padding-top: 0px; padding-bottom: 0px" id="explainervideo">
+        <div style="display: none; padding-top: 80px; padding-bottom: 0px" id="spanner">
+        </div>
+        <div class="container video-container">
+            <div class="embed-responsive embed-responsive-16by9 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xBF8s3FZnX0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="videointro-container" style="display: none;" class="column col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 mx-auto" style="margin-top: 30px;">
+            <div class="row">
+                <h2 style="margin-top: 0px; font-weight: 300 !important; padding-bottom: 40px; margin-bottom: 0px;">Read <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-network-token-rdn-launch-is-set-to-october-18th-5e9a2ffd7960">the token launch announcement</a> and watch this video to learn about the same price dutch auction
+                    format.</h2>
+            </div>
+        </div>
+    </section>
+    <section id="linktoauctionexplainer" class="tokensection" style="padding-bottom: 0px; display: none;">
+        <div class="container">
+            <div class="row">
+                <div style="text-align: center; margin-top: 20px;" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2>
+                        Please view the <a target="_blank" href="https://medium.com/@raiden_network/raiden-token-launch-instructions-3dc5df1b2386">participation instructions</a> as well as the <a target="_blank" href="https://www.youtube.com/watch?v=xBF8s3FZnX0">auction explainer video</a>.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section id="faqsection" class="tokensection" style="padding-top: 40px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="FAQheading" style="font-weight: 200; margin-bottom: 30px; font-size: 65px">FAQ</h1>
+                </div>
+                <div style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <!--<div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-12">-->
+                    <h2 style="font-weight: 300 !important;">What are RDN tokens and what can I do with them?</h2>
+                    <div class="padding" style="padding-bottom: 1px; padding-top: 1px">
+                        <p>The Project token (RDN) is a general purpose, decentralised cryptocurrency envisaged to be compatible with and used on the Raiden Network. Upon its generation, the Project Token can be used to create micropayment channels on
+                            <a
+                                target="_blank" href="https://raiden.network/micro.html">µRaiden</a> and perform payments over these channels. For more information on the RDN token, review the <a target="_blank" href="https://github.com/raiden-network/raiden-token/tree/master/contracts">token contracts</a> or see
+                                <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-network-token-model-9b6ef8d0b64">this blogpost</a>.
+                        </p>
+                    </div>
+                </div>
+                <div id="tokenallocation" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2 style="font-weight: 300 !important;">What is the initial allocation of RDN tokens?</h2>
+                    <p style="margin-bottom: 10px;">
+                        A total (fixed) supply of 100,000,000 tokens will be generated which will be allocated as follows:
+                    </p>
+                    <ul style="margin-bottom: 10px;">
+                        <li type="square">50% Public auction
+                            <li type="square">34% Retained by brainbot labs Establishment (Raiden project lead)
+                                <li type="square">16% External development fund
+                    </ul>
+                    <p>
+                        Learn more about the initial allocation of RDN tokens in <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-network-token-rdn-launch-is-set-to-october-18th-5e9a2ffd7960">this blogpost</a>.
+                    </p>
+                </div>
+                <div id="auctionformat" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2 style="font-weight: 300 !important;">What is the format of this launch?</h2>
+                    <p>
+                        The launch will be facilitated via a same price Dutch auction and a fixed percentage of tokens are offered. Read <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-token-auction-explained-1cc0c7946b26">this blogpost</a>                        for more details.
+                    </p>
+                </div>
+                <div id="dutchauction" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2 style="font-weight: 300 !important;">Why was the Dutch auction format chosen?</h2>
+                    <p>
+                        A Dutch auction should allow everyone to participate without having to rush while offering certainty about the maximum total value of all tokens at the time of a bid. Everyone gets the same price at the end of the auction. Read
+                        <a
+                            target="_blank" href="https://medium.com/@raiden_network/the-raiden-token-auction-explained-1cc0c7946b26">this blogpost</a> for more details.
+                    </p>
+                </div>
+                <div id="participate" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2 style="font-weight: 300 !important;">How to participate in the token launch?</h2>
+                    <p>
+                        If you don’t meet the KYC threshold, participating in the token launch works by simply sending ETH to the auction address. The address is shown after accepting the Terms and Conditions. Check out the <a target="_blank" href="https://medium.com/@raiden_network/raiden-token-launch-instructions-3dc5df1b2386">token launch instructions</a>                        for details.
+                    </p>
+                </div>
+                <div id="kyc" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2 style="font-weight: 300 !important;">Does one need to go through a KYC process?</h2>
+                    <p>
+                        Only participants who intend to bid more than 2.5 ETH in total, need to go through the KYC process to get whitelisted. See the <a target="_blank" style="padding-left: 0px;" href="/faq.html">KYC FAQ</a> for details.
+                    </p>
+                </div>
+                <div id="wallets" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2 style="font-weight: 300 !important;">Which wallets are supported in the token launch?</h2>
+                    <p>
+                        Generally, ERC-20 compliant wallets, which let you keep control over your private key should work. We have tested and successfully participated with the following wallets on the mainnet: Mist, MetaMask, MyEtherWallet, and Parity WebUI as well as the Foundation
+                        and the Gnosis multisig-wallets. We cannot, however, guarantee a similar successful result.
+                    </p>
+                </div>
+
+                <div id="accessRDN" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2 style="font-weight: 300 !important;">When will I be able to access my tokens?</h2>
+                    <p>
+                        You will be able to access your acquired tokens 7-10 days after the token launch has ended. RDN tokens will be credited at the address from which ETH was sent.
+                    </p>
+                </div>
+
+                <div id="distribution" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2 style="font-weight: 300 !important;">How do I get the RDN Tokens 7-10 days after the end of the auction?</h2>
+                    <p>
+                        The RDN Tokens will be distributed to the ETH address you bid with 7-10 days after the end of the auction.
+                    </p>
+                </div>
+
+                <div id="multiple" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
+                    <h2 style="font-weight: 300 !important;">Can I bid multiple times from the same ETH address?</h2>
+                    <p>
+                        Yes. You can bid multiple times from the same ETH address. If the sum of the bids exceeds 2.5 ETH, you will have to complete the KYC check.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <section class="bg-dark" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2 contactlist sm-center">
+                </div>
+                <div class="col-md-offset-3 col-md-2 contactlist">
+                    <div class="lg-pb2 md-pb2 sm-pt4 contactlist_heading" style="color: rgb(189, 189, 189); letter-spacing: 2px; font-family: &quot;Roboto Mono&quot;; font-size: 13px;">DEVELOPMENT</div>
+                    <div style="padding-top: 15px;"><a href="https://github.com/raiden-network">Raiden Network Github</a></div>
+                    <div style="padding-top: 15px;"><a href="http://raiden-network.readthedocs.io/en/stable/">Raiden Network Docs</a></div>
+                    <div style="padding-top: 15px;"><a href="https://github.com/raiden-network/microraiden">Raiden Network Github</a></div>
+                    <div style="padding-top: 15px;"><a href="http://microraiden.readthedocs.io">µRaiden Docs</a></div>
+                    <div style="padding-top: 15px;"><a href="https://demo.micro.raiden.network">µRaiden Demos</a></div>
+                </div>
+                <div class="col-md-2 sociallist sm-center">
+                    <div class="lg-pb2 md-pb2 sm-pt4 contactlist_heading" style="padding-top: 0px; color: rgb(189, 189, 189); letter-spacing: 2px; font-family: &quot;Roboto Mono&quot;; font-size: 13px;">COMMUNITY</div>
+                    <div style="padding-top: 15px;">
+                        <a rel="noopener noreferrer" href="https://twitter.com/raiden_network" target="_blank">
+                            <div class="inline-block" style="display: inline-block;">
+                                <div class="table-cell" style="padding-right: 1rem; display: table-cell;">
+                                    <img src='../img/twitter.svg' style="height: 15px;"></img>
+                                </div>
+                                <div class="table-cell" style="display: table-cell;">Twitter</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="padding-top: 15px;">
+                        <a rel="noopener noreferrer" href="https://www.reddit.com/r/raidennetwork/" target="_blank">
+                            <div class="inline-block" style="display: inline-block;">
+                                <div class="table-cell" style="padding-right: 1rem; display: table-cell;">
+                                    <img src='../img/reddit.svg' style="height: 15px; "></img>
+                                </div>
+                                <div class="table-cell" style="display: table-cell;">Reddit</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="padding-top: 15px;">
+                        <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCoUP_hnjUddEvbxmtNCcApg" target="_blank">
+                            <div class="inline-block" style="display: inline-block;">
+                                <div class="table-cell" style="padding-right: 1rem; display: table-cell;">
+                                    <img src='../img/tv.svg' style="height: 15px;"></img>
+                                </div>
+                                <div class="table-cell" style="display: table-cell;">Youtube</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="padding-top: 15px;">
+                        <a rel="noopener noreferrer" href="https://gitter.im/raiden-network/raiden" target="_blank">
+                            <div class="inline-block" style="display: inline-block;">
+                                <div class="table-cell" style="padding-right: 1rem; display: table-cell;">
+                                    <img src='../img/message-circle.svg' style="height: 15px; "></img>
+                                </div>
+                                <div class="table-cell" style="display: table-cell;">Dev Chat</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 contactlist sm-center">
+                    <div class="lg-pb2 md-pb2 sm-pt4 contactlist_heading" style="color: rgb(189, 189, 189); letter-spacing: 2px; font-family: &quot;Roboto Mono&quot;; font-size: 13px;">ORGANIZATION</div>
+                    <div style="padding-top: 15px;"><a target="_blank" href="https://angel.co/brainbot-group/jobs">We're hiring!</a></div>
+                    <div style="padding-top: 15px;"><a href="https://raiden.network/imprint.html">Imprint</a></div>
+                    <div style="padding-top: 15px;"><a rel="noopener noreferrer" href="https://token.raiden.network/privacy.html">Website Privacy Policy</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.5.1/jQuery.print.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-creative/3.3.7/js/creative.min.js"></script>
+
+    <!-- token -->
+    <script src="js/token.js"></script>
+    <script src="js/tandc.js"></script>
+
+    <!-- graph library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+    <script src="js/auction-graph.js"></script>
+
+    <!-- mobile screen optimizing -->
+    <script src="js/mobilescreenoptimizer.js"></script>
+
+    <!-- opening modal on link -->
+    <script src="js/awarenessmodal.js"></script>
+
+</body>
+
+</html>
