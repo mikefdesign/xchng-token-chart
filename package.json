@@ -1,0 +1,15 @@
+{
+  "name": "raiden-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "auction-graph.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.7.2"
+  }
+}
