@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91465549-7"></script>
-    <script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91465549-7"></script> -->
+    <!-- <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -34,8 +34,8 @@
         }
         gtag('js', new Date());
         gtag('config', 'UA-91465549-7');
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+    </script> -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js?hl=en"></script> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +50,7 @@
 <body id="page-top">
     <div class="se-pre-con"></div>
 
-    <nav id="frontNav" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="140">
+    <nav id="frontNav" class="navbar navbar-default navbar-fixed-top" style="display: none;" data-spy="affix" data-offset-top="140">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -100,7 +100,7 @@
             <div class="header-content">
                 <div class="header-content-inner">
                     <h1 id="auction-title" style="padding-top: 120px; font-weight: 200; font-size: 65px" !important>
-                        The Raiden token launch starts on October 18th around 3pm UTC.
+                        The XCHNG token launch starts on MAy 25th around 8pm UTC.
                     </h1>
                     <h2 id="auction-subtitle" style="display: none; margin-top: 0px; font-weight: 300 !important; padding-bottom: 0px;" !important>The auction format combines certainty of participation with certainty of valuation.
                     </h2>
@@ -109,7 +109,7 @@
         </div>
 
     </section>
-    <section style="background-color: black; color: white; padding-top: 0px; padding-bottom: 0px" id="kyc-firststage">
+    <section style="background-color: black; color: white; padding-top: 0px; padding-bottom: 0px; display: none;" id="kyc-firststage">
         <div class="container">
             <div class="row">
                 <div style="margin-bottom: 20px; text-align: center; margin-top: 20px;" class="column col-lg-6 col-md-8 col-sm-8 col-xs-8 col-lg-offset-3 col-md-offset-2 col-sm-offset-2 col-xs-offset-1 mx-auto">
@@ -127,7 +127,7 @@
             <h2 style="margin-top: 0px; font-weight: 300 !important; padding-bottom: 0px; margin-bottom: 0px;">Read <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-network-token-rdn-launch-is-set-to-october-18th-5e9a2ffd7960">the token launch announcement</a> and watch below video to learn about the same price dutch auction format.</h2>
         </div>
     </section>
-    <section class="tokensection" id="timer-container">
+    <section class="tokensection" id="timer-container" style="display: none;">
         <div class="container" style="text-align:center; margin-bottom: 20px">
             <div class="header-content">
                 <div class="header-content-inner" id="participate-button-container" style="display: none">
@@ -356,7 +356,8 @@
         <div id="videointro-container" style="display: none;" class="column col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 mx-auto" style="margin-top: 30px;">
             <div class="row">
                 <h2 style="margin-top: 0px; font-weight: 300 !important; padding-bottom: 40px; margin-bottom: 0px;">Read <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-network-token-rdn-launch-is-set-to-october-18th-5e9a2ffd7960">the token launch announcement</a> and watch this video to learn about the same price dutch auction
-                    format.</h2>
+                    format.
+                </h2>
             </div>
         </div>
     </section>
@@ -383,9 +384,8 @@
                     <h2 style="font-weight: 300 !important;">What are RDN tokens and what can I do with them?</h2>
                     <div class="padding" style="padding-bottom: 1px; padding-top: 1px">
                         <p>The Project token (RDN) is a general purpose, decentralised cryptocurrency envisaged to be compatible with and used on the Raiden Network. Upon its generation, the Project Token can be used to create micropayment channels on
-                            <a
-                                target="_blank" href="https://raiden.network/micro.html">µRaiden</a> and perform payments over these channels. For more information on the RDN token, review the <a target="_blank" href="https://github.com/raiden-network/raiden-token/tree/master/contracts">token contracts</a> or see
-                                <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-network-token-model-9b6ef8d0b64">this blogpost</a>.
+                            <a target="_blank" href="https://raiden.network/micro.html">µRaiden</a> and perform payments over these channels. For more information on the RDN token, review the <a target="_blank" href="https://github.com/raiden-network/raiden-token/tree/master/contracts">token contracts</a>                            or see
+                            <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-network-token-model-9b6ef8d0b64">this blogpost</a>.
                         </p>
                     </div>
                 </div>
@@ -413,8 +413,7 @@
                     <h2 style="font-weight: 300 !important;">Why was the Dutch auction format chosen?</h2>
                     <p>
                         A Dutch auction should allow everyone to participate without having to rush while offering certainty about the maximum total value of all tokens at the time of a bid. Everyone gets the same price at the end of the auction. Read
-                        <a
-                            target="_blank" href="https://medium.com/@raiden_network/the-raiden-token-auction-explained-1cc0c7946b26">this blogpost</a> for more details.
+                        <a target="_blank" href="https://medium.com/@raiden_network/the-raiden-token-auction-explained-1cc0c7946b26">this blogpost</a> for more details.
                     </p>
                 </div>
                 <div id="participate" style="padding-left:0px" class="column col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 mx-auto">
@@ -460,76 +459,6 @@
             </div>
     </section>
 
-    <section class="bg-dark" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-offset-1 col-md-2 contactlist sm-center">
-                </div>
-                <div class="col-md-offset-3 col-md-2 contactlist">
-                    <div class="lg-pb2 md-pb2 sm-pt4 contactlist_heading" style="color: rgb(189, 189, 189); letter-spacing: 2px; font-family: &quot;Roboto Mono&quot;; font-size: 13px;">DEVELOPMENT</div>
-                    <div style="padding-top: 15px;"><a href="https://github.com/raiden-network">Raiden Network Github</a></div>
-                    <div style="padding-top: 15px;"><a href="http://raiden-network.readthedocs.io/en/stable/">Raiden Network Docs</a></div>
-                    <div style="padding-top: 15px;"><a href="https://github.com/raiden-network/microraiden">Raiden Network Github</a></div>
-                    <div style="padding-top: 15px;"><a href="http://microraiden.readthedocs.io">µRaiden Docs</a></div>
-                    <div style="padding-top: 15px;"><a href="https://demo.micro.raiden.network">µRaiden Demos</a></div>
-                </div>
-                <div class="col-md-2 sociallist sm-center">
-                    <div class="lg-pb2 md-pb2 sm-pt4 contactlist_heading" style="padding-top: 0px; color: rgb(189, 189, 189); letter-spacing: 2px; font-family: &quot;Roboto Mono&quot;; font-size: 13px;">COMMUNITY</div>
-                    <div style="padding-top: 15px;">
-                        <a rel="noopener noreferrer" href="https://twitter.com/raiden_network" target="_blank">
-                            <div class="inline-block" style="display: inline-block;">
-                                <div class="table-cell" style="padding-right: 1rem; display: table-cell;">
-                                    <img src='../img/twitter.svg' style="height: 15px;"></img>
-                                </div>
-                                <div class="table-cell" style="display: table-cell;">Twitter</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div style="padding-top: 15px;">
-                        <a rel="noopener noreferrer" href="https://www.reddit.com/r/raidennetwork/" target="_blank">
-                            <div class="inline-block" style="display: inline-block;">
-                                <div class="table-cell" style="padding-right: 1rem; display: table-cell;">
-                                    <img src='../img/reddit.svg' style="height: 15px; "></img>
-                                </div>
-                                <div class="table-cell" style="display: table-cell;">Reddit</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div style="padding-top: 15px;">
-                        <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCoUP_hnjUddEvbxmtNCcApg" target="_blank">
-                            <div class="inline-block" style="display: inline-block;">
-                                <div class="table-cell" style="padding-right: 1rem; display: table-cell;">
-                                    <img src='../img/tv.svg' style="height: 15px;"></img>
-                                </div>
-                                <div class="table-cell" style="display: table-cell;">Youtube</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div style="padding-top: 15px;">
-                        <a rel="noopener noreferrer" href="https://gitter.im/raiden-network/raiden" target="_blank">
-                            <div class="inline-block" style="display: inline-block;">
-                                <div class="table-cell" style="padding-right: 1rem; display: table-cell;">
-                                    <img src='../img/message-circle.svg' style="height: 15px; "></img>
-                                </div>
-                                <div class="table-cell" style="display: table-cell;">Dev Chat</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2 contactlist sm-center">
-                    <div class="lg-pb2 md-pb2 sm-pt4 contactlist_heading" style="color: rgb(189, 189, 189); letter-spacing: 2px; font-family: &quot;Roboto Mono&quot;; font-size: 13px;">ORGANIZATION</div>
-                    <div style="padding-top: 15px;"><a target="_blank" href="https://angel.co/brainbot-group/jobs">We're hiring!</a></div>
-                    <div style="padding-top: 15px;"><a href="https://raiden.network/imprint.html">Imprint</a></div>
-                    <div style="padding-top: 15px;"><a rel="noopener noreferrer" href="https://token.raiden.network/privacy.html">Website Privacy Policy</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -547,17 +476,17 @@
 
     <!-- token -->
     <script src="js/token.js"></script>
-    <script src="js/tandc.js"></script>
+    <!-- <script src="js/tandc.js"></script> -->
 
     <!-- graph library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
     <script src="js/auction-graph.js"></script>
 
     <!-- mobile screen optimizing -->
-    <script src="js/mobilescreenoptimizer.js"></script>
+    <!-- <script src="js/mobilescreenoptimizer.js"></script> -->
 
     <!-- opening modal on link -->
-    <script src="js/awarenessmodal.js"></script>
+    <!-- <script src="js/awarenessmodal.js"></script> -->
 
 </body>
 

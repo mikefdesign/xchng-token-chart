@@ -452,14 +452,14 @@
         ]
     },
     "status": {
-        "auction_stage": 3,
+        "auction_stage": 1,
         "price": 0,
         "raised_eth": 109531609992664836911821,
         "final_price": 2190632199853296,
         "claimed_tokens": 0,
         "timestamp": 1510025197,
-        "start_time": 1508341187,
-        "end_time": 1509539986,
+        "start_time": 1525546800,
+        "end_time": 1527274800,
         "price_start": 2000000000000000000,
         "price_constant": 1574640000,
         "price_exponent": 3,

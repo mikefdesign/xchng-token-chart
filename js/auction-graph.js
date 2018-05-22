@@ -360,8 +360,7 @@ function getInitialData() {
         });
 }
 
-function
-searchFor(arr, key, term) {
+function searchFor(arr, key, term) {
     for (vari = 0; i < arr.length; i++) {
         if (arr[i] && arr[i][key] && arr[i][key].toLowerCase().indexOf(term.toLowerCase()) >= 0) {
             return
@@ -370,14 +369,10 @@ searchFor(arr, key, term) {
     }
 }
 
-function
-updateData(data) {
-    var
-        fundsRaisedData = [];
+function updateData(data) {
+    var fundsRaisedData = [];
     if (data.histogram && data.histogram.bin_cumulative_sum) {
-        data
-            .histogram
-            .bin_cumulative_sum
+        data.histogram.bin_cumulative_sum
             .forEach(function(bin, i) {
                 if (i >= data.histogram.timestamped_bins.length) return;
                 fundsRaisedData.push({
@@ -394,8 +389,7 @@ updateData(data) {
             x: new Date(),
             y: 0
         }];
-    } else
-    if (fundsRaisedData[0].x > startTime) {
+    } else if (fundsRaisedData[0].x > startTime) {
         fundsRaisedData.unshift({
             x: startTime,
             y: 0
@@ -405,29 +399,24 @@ updateData(data) {
         });
     }
 
-    var
-        target = searchFor(chartData.datasets, 'label', 'Offered').data,
+    var target = searchFor(chartData.datasets, 'label', 'Offered').data,
         i, auction_stage = data.status['auction_stage'] || 2;
 
     // verticalLine
-    var
-        nowX = new Date(Math.max(Date.now(), fundsRaisedData[fundsRaisedData.length - 1].x.getTime(), startTime.getTime()));
+    var nowX = new Date(Math.max(Date.now(), fundsRaisedData[fundsRaisedData.length - 1].x.getTime(), startTime.getTime()));
     if (auction_stage >= 3 || Math.abs(nowX.getTime() - data.status['timestamp'] * 1e3) > 600e3) { // 10min deviation
         nowX = fundsRaisedData[fundsRaisedData.length - 1].x;
     }
     //var nowX = new Date(fundsRaisedData[fundsRaisedData.length - 1].x);
 
-    var
-        nowY = fundsRaisedData[fundsRaisedData.length - 1].y;
+    var nowY = fundsRaisedData[fundsRaisedData.length - 1].y;
 
     // change min y values to 1k after price goes above 5k
-    var
-        ticksMin = searchFor(chart.config.options.scales.yAxes, 'id', 'funding').ticks.min;
+    var ticksMin = searchFor(chart.config.options.scales.yAxes, 'id', 'funding').ticks.min;
     if (nowY > 5e3 && ticksMin < 10) {
         searchFor(chart.config.options.scales.yAxes, 'id', 'funding').ticks.min *= 1e3;
         searchFor(chart.config.options.scales.yAxes, 'id', 'price').ticks.min *= 1e3;
-    } else
-    if (nowY < 0.998) {
+    } else if (nowY < 0.998) {
         for (i = 1; i < target.length && 1.0 < target[i].y; i++)
         ;
         if (i >= target.length) {
@@ -568,10 +557,8 @@ updateData(data) {
     chart.update(0);
 }
 
-function
-updateDataAPI() {
-    $
-        .getJSON('status.json', {
+function updateDataAPI() {
+    $.getJSON('status.json', {
             ts: '' + Date.now()
         })
         .done(function(_data) {
@@ -597,13 +584,11 @@ updateDataAPI() {
         });
 }
 
-function
-clearClickedVline() {
+function clearClickedVline() {
     clicked = null;
     updateData(data);
 }
 
-$(document)
-    .ready(function() {
-        getInitialData();
-    });
+$(document.ready(function() {
+            getInitialData();
+        })

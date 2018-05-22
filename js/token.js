@@ -1,8 +1,8 @@
 var oldStage = ''
     // start of auction
-var startDay = new Date('Sep 27, 2018 17:34:20').getTime();
+var startDay = new Date('May 5, 2018 12:00:00').getTime();
 // end of auction
-var endDay = new Date('Oct 29, 2018 17:34:45').getTime();
+var endDay = new Date('May 30, 2018 12:00:00').getTime();
 
 // Auction price decay function; returns price at timestamp
 function getPrice(priceStart, priceConstant, priceExponent, elapsedSeconds) {
@@ -180,7 +180,7 @@ function handleStageChange(newStage) {
                 break;
             case 'started':
                 $('#graph-section').show();
-                $('#auction-title').text('The Raiden Token Launch is live.');
+                $('#auction-title').text('The XCHNG Token Launch is live.');
                 $('#auction-subtitle').show();
                 $('#auction-subtitle').text(
                     'Participate at an implied valuation you consider fair.');
@@ -190,7 +190,8 @@ function handleStageChange(newStage) {
                 $('#explainervideo').hide();
                 $('#kyc-firststage').hide();
                 $('#auction-explainer-container').hide();
-                $('#timer-container').show();
+                $('#timer-container').hide();
+                // $('#timer-container').show();
                 $('#participate-button-container').show();
                 $('#kyc-information').show();
                 $('.not-started').hide();
